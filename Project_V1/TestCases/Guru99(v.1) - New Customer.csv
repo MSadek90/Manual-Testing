@@ -1,0 +1,105 @@
+Test Case ID,Test Scenarios,Test Case Title,Test Steps,Test Data,Expected Result
+TC-01,Verify Customer Name.,Customer Name field cannot be left blank.,"1- Click on the Customer name field.
+2- Leave Customer Name field empty.
+3- Move to the next field.",,"The system should display An error message 
+""Customer Name must not be blank""."
+TC-02,Verify Customer Name.,Customer Name can't contain any numbers.,"1- Enter Customer Name containing numbers.
+2- Move to the next field.",12mahm,"The system should display An error message
+ ""Numbers are not allowed""."
+TC-03,Verify Customer Name.,Customer Name can't contain any special characters.,"1- Enter Customer Name containing special characters.
+2- Move to the next field.",ah@@#3,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-04,Verify Customer Name.,Customer Name cannot start with a space.,"1- Enter Customer Namer start with a space.
+2- Move to the next field.", ahmed,"The system should display An error message
+ ""Customer Name should not start with a space""."
+TC-05,Verify Customer Name.,Customer Name should be legible.,"1- Enter a Customer Name that easy to read.
+2- Move to the next field.",Mohamed,The system should move the manager to the next field with no errors.
+TC-06,Verify The address.,The address field cannot be left blank.,"1- Click on the address field.
+2- Leave the address field empty.
+3- Move to the next field.",,"The system should display An error message 
+""The address must not be blank""."
+TC-07,Verify The address.,The address can't be only numbers.,"1- Enter the address containing only numbers.
+2- Move to the next field.",123547,"The system should display An error message
+ ""Numbers only are not allowed""."
+TC-08,Verify The address.,The address can't contain any special characters.,"1- Enter the address containing special characters.
+2- Move to the next field.",cairo@@#,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-09,Verify The address.,The address cannot start with a space.,"1- Enter the address start with a space.
+2- Move to the next field.", cairo,"The system should display An error message
+ ""The address should not start with a space""."
+TC-10,Verify The address.,The address should contain letters and numbers .,"1- Enter the address containing a mix of letters and numbers.
+2- Move to the next field.",,The system should move the manager to the next field with no errors.
+TC-11,Verify The City.,The City field cannot be left blank.,"1- Click on the city field.
+2- Leave the city field empty.
+3- Move to the next field.",,"The system should display An error message 
+""The City must not be blank""."
+TC-12,Verify The City.,The City can't be only numbers.,"1- Enter the City containing only numbers.
+2- Move to the next field.",98763,"The system should display An error message
+ ""Numbers only are not allowed""."
+TC-13,Verify The City.,The City can't contain any special characters.,"1- Enter the City containing special characters.
+2- Move to the next field.",city***,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-14,Verify The City.,The City cannot start with a space.,"1- Enter the City start with a space.
+2- Move to the next field.", city,"The system should display An error message
+ ""The City should not start with a space""."
+TC-15,Verify The City.,The City should contain letters and numbers .,"1- Enter the City containing a mix of letters and numbers.
+2- Move to the next field.",city145,The system should move the manager to the next field with no errors.
+TC-16,Verify The state.,The state field cannot be left blank.,"1- Leave the state field empty.
+2- Move to the next field.",,"The system should display An error message 
+""The state must not be blank""."
+TC-17,Verify The state.,The state can't be only numbers.,"1- Enter the state containing only numbers.
+2- Move to the next field.",12369,"The system should display An error message
+ ""Numbers only are not allowed""."
+TC-18,Verify The state.,The state can't contain any special characters.,"1- Enter the state containing special characters.
+2- Move to the next field.",state&&,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-19,Verify The state.,The state cannot start with a space.,"1- Enter the state start with a space.
+2- Move to the next field.", state,"The system should display An error message
+ ""State cannot start with a space""."
+TC-20,Verify The PIN.,The PIN field cannot be left blank.,"1- Leave the PIN field empty.
+2- Move to the next field.",,"The system should display An error message 
+""The PIN must no be blank""."
+TC-21,Verify The PIN.,The PIN must have 6 digits.,"1- Enter the PIN less than 6 digits.
+2- Move to the next field.",123,"The system should display An error message
+ ""The PIN must have 6 didgits""."
+TC-22,Verify The PIN.,The PIN can't contain any special characters.,"1- Enter the PIN containing special characters.
+2- Move to the next field.",PIN!!@,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-23,Verify The PIN.,The PIN cannot start with a space.,"1- Enter the PIN start with a space.
+2- Move to the next field.",123,"The system should display An error message
+ ""The PIN should not start with a space""."
+TC-24,Verify The PIN.,The PIN can't contain any characters.,"1- Enter the PIN containing characters.
+2- Move to the next field.",PIN,"The system should display An error message
+  ""Characters are not allowed""."
+TC-25,Verify Telephone number.,The Telephone number field cannot be left blank.,"1- Leave the Telephone number field empty.
+2- Move to the next field.",,"The system should display An error message 
+""The Telephone number is required""."
+TC-26,Verify Telephone number.,The Telephone number must be numeric and cannot have spaces.,"1- Enter the Telephone number have spaces.
+2- Move to the next field.",98 763954,"The system should display An error message 
+""The Telephone number cannot have spaces""."
+TC-27,Verify Telephone number.,The Telephone number can't contain any special characters.,"1- Enter the Telephone number containing special characters.
+2- Move to the next field.",Telephone number!!@,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-28,Verify Telephone number.,The Telephone number cannot start with a space.,"1- Enter the Telephone number start with a space.
+2- Move to the next field.",1235875,"The system should display An error message
+ ""The Telephone number should not start with a space""."
+TC-29,Verify Telephone number.,The Telephone number can't contain any special characters.,"1- Enter the Telephone number containing characters.
+2- Move to the next field.",Telephone number,"The system should display An error message
+  ""Characters are not allowed""."
+TC-30,Verify Email.,The Email field cannot be left blank.,"1- Leave the Email field empty.
+2- Move to the next field.",,"The system should display An error message 
+""Email is required""."
+TC-31,Verify Email.,The Email cannot start with a space.,"1- Enter the Email starts with a space.
+2- Move to the next field.", Userdem125@gmail.com,"The system should display An error message
+ ""The Email should not start with a space""."
+TC-32,Verify Email.,The Email cannot have any spaces.,"1- Enter the Email have spaces.
+2- Move to the next field.",User dem125@gmail.com,"The system should display An error message
+ ""The Email should not have any spaces""."
+TC-33,Verify Email.,The Email must be in correct format.,"1- Enter an invalid Email.
+2- Move to the next field.","User@gmail.
+User@gmailcom
+User@mail.cm
+user@","The system should display An error message
+ ""The Email is invalid""."
+TC-34,"Verify ""Submit"" Button",The data should be submitted,"1- Enter all the valid data in all fields
+2- press submit",,The all data should submitted sucessfully.

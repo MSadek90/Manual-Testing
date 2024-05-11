@@ -1,0 +1,53 @@
+Test Case ID,Test Scenarios,Test Case Title,Test Steps,Test Data,Expected Result
+TC-01,Verify blank credentials,The manager can't log in leaving all fields empty ,"1- Leave the UserID field empty.
+2- Leave the password field empty.
+3- Click on the ""Login"" button.",,"The system should display An error message 
+""User is not valid"".
+"
+TC-02,,,,,
+TC-03,Verify missing ID,User-ID must not be blank.,"1- Click on the User-ID field.
+2- Leave the UserID field empty.
+3- Move to the next field.
+",,"The system should display An error message 
+""User-ID must not be blank"".
+"
+TC-04,Verify missing password,Password must not be blank.,"1- Click on the password field.
+2- Leave the password field empty.
+3- Move to the field above.
+",1235876,"The system should display An error message 
+""Password must not be blank""."
+TC-05,Verify invalid UserID,The manager cannot log in by entering an invalid UserID. ,"1- Enter an invalid UserID.
+2- Enter a valid password.
+3- Click on the ""Login"" button.","vgrge27
+123Gt@@!","The system should display An error message 
+""UserID is not valid"".
+"
+TC-06,Verify invalid password,The manager cannot log in by entering an invalid password. ,"1- Enter a valid UserID.
+2- Enter an invalid password.
+3- Click on the ""Login"" button.","123456987
+ver12","The system should display An error message 
+""Password is not valid"".
+"
+TC-07,Verify the password,The password must be encrypted.,Enter the password.,,The password should be encrypted.
+TC-08,"Verify ""Reset"" button",The manager/customer can reset the data if the UserID is only filled.,"1- Enter a valid UserID.
+2- Leave the password field empty.
+3- Click on the ""Reset"" button.", 122ffw,The system should reset the data successfully.
+TC-09,"Verify ""Reset"" button",The manager/customer can reset the data if the password is only filled.,"1- Leave the UserID field empty.
+2- Enter a valid password.
+3- Click on the ""Reset"" button.",123Gt@@!,The system should reset the data successfully.
+TC-10,"Verify ""Reset"" button",The manager/customer can reset the data if all fields are filled.,"1- Enter a valid UserID.
+2- Enter a valid password.
+3- Click on the ""Reset"" button.","1235876
+123Gt@@!",The system should reset the data successfully.
+TC-11,"Verify ""Reset"" button",The manager/customer can reset the data if all fields are empty.,"1- Leave the UserID field empty.
+2- Leave the password field empty.
+3- Click on the ""Reset"" button.",,No errors appear.
+TC-12,"Verify ""Submit"" button",The manager can log in providing valid credentials. ,"1- Enter a valid UserID.
+2- Enter a valid password.
+3- Click on the ""Login"" button.","1235876
+123Gt@@!",The system should redirect the manager to the home page of the registered account.
+TC-13,,,,,
+TC-14,,,,,
+TC-15,,,,,
+TC-16,,,,,
+TC-17,,,,,

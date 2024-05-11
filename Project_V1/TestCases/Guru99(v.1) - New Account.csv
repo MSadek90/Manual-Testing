@@ -1,0 +1,69 @@
+Test Case ID,Test Scenarios,Test Case Title,Test Steps,Test Data,Expected Result
+TC-01,Verify the visibility of the customer ID filed,Verify the customer ID field is present. ,,,The manager can enter the ID in the customer ID filed 
+TC-02,Verify customer ID,The customer ID field can't be empty.,"1- Leave the customer ID field empty.
+2- Move to the next field.",,"The system should display An error message 
+""Customer ID must not be blank""."
+TC-03,Verify customer ID,The customer ID field can't contain any character.,"1- Enter the ID containing characters.
+2- Move to the next field.",12mahm,"The system should display An error message
+ ""Characters are not allowed""."
+TC-04,Verify customer ID,The customer ID field can't contain any special character.,"1- Enter the ID containing special characters.
+2- Move to the next field.",12@@#3,"The system should display An error message 
+""Special characters are not allowed""."
+TC-05,Verify customer ID,The customer ID field can't start with empty space.,"1- Enter the ID starting with an empty character.
+2- Move to the next field.", 122ffw,"The system should display An error message 
+""Customer ID shouldn't start with empty space""."
+TC-06,Verify account type,The manager must select any option of account type.,"1- Click on the drop-down list.
+2- Choose one option.
+3- Move to the next field.",,The system should move the manager to the next field with no errors.
+TC-07,Verify adding multiple saving account,The manager can add multiple savings accounts for customers who already have one or more savings accounts.,"1- Enter an existing customer ID. 
+2-Choose saving account from the account type field. 
+3- Enter the initial deposit. 
+4- Click on the submit button.","1235896
+saving
+2000",The system should successfully create a new savings account for customers who have one or more existing savings accounts.
+TC-08,Verify adding multiple saving account,The manager can add multiple savings accounts for customers who already have one or more current accounts.,"1- Enter an existing customer ID. 
+2-Choose current account from the account type field. 
+3- Enter the initial deposit. 
+4- Click on the submit button.","1235896
+current
+1500",The system should successfully create a new current account for customers who have one or more existing savings accounts.
+TC-09,Verify adding multiple current account,The manager can add multiple current accounts for customers who already have one or more current accounts.,"1- Enter an existing customer ID. 
+2-Choose current account from the account type field. 
+3- Enter the initial deposit. 
+4- Click on the submit button.","1235896
+current
+700",The system should successfully create a new current account for customers who have one or more existing current accounts.
+TC-10,Verify adding multiple current account,The manager can add multiple current accounts for customers who already have one or more saving accounts.,"1- Enter an existing customer ID. 
+2-Choose saving account from the account type field. 
+3- Enter the initial deposit. 
+4- Click on the submit button.","1235896
+saving
+550",The system should successfully create a new savings account for customers who have one or more existing current accounts.
+TC-11,Verify Initial deposit ,The manager Can't leave the initial deposit empty.,Leave the initial deposit empty.,,"The system should display an error
+ ""Initial deposit shouldn't be empty""."
+TC-12,Verify Initial deposit ,The manager Can't add a deposit less than 500 in the initial deposit field.,"1- Enter a deposit of less than 500.
+2- Move to the next field.",350,"The system should display an error
+ ""Initial deposit shouldn't less than""."
+TC-13,Verify Initial deposit ,The manager Cannot add a deposit of more than 500 in the initial deposit field.,"1- Enter a deposit of more than 500.
+2- Move to the next field.",1500,The system should move the manager to the next field with no errors.
+TC-14,Verify Initial deposit ,The manager can add a deposit equal to 500 in the initial deposit field.,"1- Enter a deposit of eqaul to 500.
+2- Move to the next field.",500,The system should move the manager to the next field with no errors.
+TC-15,"Verify ""Reset"" button",The manager can reset the data if any field is filled with.,"1- Leave all fields empty.
+2- Click on the ""Reset"" button.",,no errors appear.
+TC-16,"Verify ""Submit"" button",The manager can submit the data for a new account.,"1- Enter a valid customer ID. 
+2-Choose an account from the account type field. 
+3- Enter a valid initial deposit. 
+4- Click on the ""Submit"" button.","1235896
+saving
+5500",The system should successfully create a new current account.
+TC-17,"Verify ""Submit"" button",The manager cannot submit the data if he leaves the required field empty.,"1- Leave the customer ID field empty. 
+2-Choose an account from the account type field. 
+3- Enter a valid initial deposit. 
+4- Click on the ""Submit"" button.","
+saving
+5500","The system should display an error
+ ""Customer ID is required""."
+TC-18,"Verify ""Submit"" button",All fields are empty.,"1- Leave the customer ID field empty. 
+2- Leave the account type field empty. 
+3- Click on the ""Submit"" button.",,"The system should display an error
+ ""Customer ID is required""."

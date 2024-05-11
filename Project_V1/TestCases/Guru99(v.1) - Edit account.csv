@@ -1,0 +1,26 @@
+Test Case ID,Test Scenarios,Test Case Title,Test Steps,Test Data,Expected Result
+TC-01,Verify the visibility of the customer ID filed,Verify the customer ID field is present. ,,,The manager can enter the ID in the customer ID filed 
+TC-02,Verify customer ID,The customer ID field can't be empty.,"1- Leave the customer ID field empty.
+2- Move to the next field.",,"The system should display An error message 
+""Customer ID is required""."
+TC-03,Verify customer ID,The customer ID field can't contain any character.,"1- Enter the ID containing characters.
+2- Move to the next field.",12mahm,"The system should display An error message
+ ""Characters are not allowed""."
+TC-04,Verify customer ID,The customer ID field can't contain any special character.,"1- Enter the ID containing special characters.
+2- Move to the next field.",12@@#3,"The system should display An error message 
+""Special characters are not allowed""."
+TC-05,Verify customer ID,The customer ID field can't start with empty space.,"1- Enter the ID containing characters.
+2- Move to the next field.", 122ffw,"The system should display An error message 
+""Customer ID shouldn't start with empty space""."
+TC-06,Verify account number.,The account number field can't be empty.,"1- Leave the account number field empty.
+2- Move to the next field.",,"The system should display An error message 
+""account number is required""."
+TC-07,Verify account number.,The account number field can't contain any characters.,"1- Enter the account number containing characters.
+2- Move to the next field.",12mahm,"The system should display An error message
+ ""Characters are not allowed""."
+TC-08,Verify account number.,The account number field can't contain any special character.,"1- Enter the account number containing special characters.
+2- Move to the next field.",12@@#3,"The system should display An error message 
+""Special characters are not allowed""."
+TC-09,Verify account number.,The account number field can't start with space.,"1- Enter the account number containing characters.
+2- Move to the next field.", 122ffw,"The system should display An error message 
+""account number shouldn't start with empty space""."

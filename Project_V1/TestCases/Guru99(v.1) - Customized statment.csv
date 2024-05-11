@@ -1,0 +1,78 @@
+Test Case ID,Test Scenarios,Test Case Title,Test Steps,Test Data,Expected Result
+TC-01,Verify the account number.,The account number must not be left blank.,"1- Leave the account number field empty.
+2- Move to the next field.",,"The system should display An error message 
+""account number is required""."
+TC-02,Verify the account number.,The account number can't contain any characters.,"1- Enter the account number containing characters.
+2- Move to the next field.",12mahm,"The system should display An error message
+ ""Characters are not allowed""."
+TC-03,Verify the account number.,The account number can't contain any special character.,"1- Enter the account number containing special characters.
+2- Move to the next field.",12@@#3,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-04,Verify the account number.,The account number must be numbered.,"1- Enter an existing account number containing only numbers.
+2- Move to the next field.",12365482,The system should move the manager to the next field with no errors.
+TC-05,Verify the account number.,The account must not start with a space.,"1- Enter the account number starting with a space.
+2- Move to the next field.",1201482,"The system should display An error message
+ ""Characters are not allowed""."
+TC-06,Verify the amount lower limit.,The amount lower limit must not be left blank.,"1- Leave the amount lower limit field empty.
+2- Move to the next field.",,"The system should display An error message 
+""amount lower limit is required""."
+TC-07,Verify the amount lower limit.,The amount lower limit can't contain any characters.,"1- Enter the amount lower limit containing characters.
+2- Move to the next field.",090mahm,"The system should display An error message
+ ""Characters are not allowed""."
+TC-08,Verify the amount lower limit.,The amount lower limit can't contain any special character.,"1- Enter the amount lower limit containing special characters.
+2- Move to the next field.",627@#3,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-09,Verify the amount lower limit.,The amount lower limit must be numbered.,"1- Enter the amount lower limit containing only numbers.
+2- Move to the next field.",200,The system should move the manager to the next field with no errors.
+TC-10,Verify the number of transactions.,The number of transactions must not be left blank.,"1- Leave the number of transactions field empty.
+2- Move to the next field.",,"The system should display An error message 
+"" number of transactions is required""."
+TC-11,Verify the number of transactions.,The number of transactions can't contain any characters.,"1- Enter the number of transactions containing characters.
+2- Move to the next field.",7k,"The system should display An error message
+ ""Characters are not allowed""."
+TC-12,Verify the  number of transactions.,The number of transactions can't contain any special character.,"1- Enter the number of transactions containing special characters.
+2- Move to the next field.",3#,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-13,Verify the number of transactions.,The number of transactions must be numbered.,"1- Enter the number of transactions containing only numbers.
+2- Move to the next field.",10,The system should move the manager to the next field with no errors.
+TC-14,Verify the From date. ,The From date must not be greater than the To date.,"1- Enter The From date lager than the To date.
+2- Move to the next field.","From: 12/5/2024
+To:      10/5/2024","The system should display An error message
+ ""To date must be larger than From date""."
+TC-15,Verify the From date. ,The Form date filed must not be empty.,"1- Leave the From date field empty.
+2- Move to the next field.",,"The system should display An error message
+ ""From date is required""."
+TC-16,Verify the From date. ,The Form date must not be set to a future date beyond today's date.,"1- Enter a date in the future from today's date.
+2- Move to the next field.",,"The system should display An error message
+ ""From date is invalid""."
+TC-17,Verify the To date. ,The To date must be valid,"1- Enter a valid To date.
+2- Move to the next field.",,No errors appear.
+TC-18,Verify the To date. ,The To date filed must not be empty.,"1- Leave the To date field empty.
+2- Move to the next field.",,"The system should display An error message
+ ""To date is required""."
+TC-19,"Verify ""Reset"" button",The manager can reset the data if any field is filled with.,"1- Enter the account number.
+2- Leave other fileds empty.
+3- Click on the ""Reset"" button.",,The account number should disappear and no errors appear.
+TC-20,"Verify ""Reset"" button",The manager can reset the data if all field is empty.,"1- Leave all fields empty.
+3- Click on the ""Reset"" button.",,No errors appear.
+TC-21,"Verify ""Submit"" button",The manager can submit the data by filling all fields.,"1- Enter a valid account number. 
+2- Enter the From date. 
+3- Enter the To date. 
+4- Enter the amount lower limit.
+5- Enter the number of transactions.
+6- Click on ""Submit"" button.","1235896
+12/5/2024
+30/6/2024
+500
+10",The system should successfully show the customized statment.
+TC-22,"Verify ""Submit"" button",The manager cannot submit the data if he leaves the required field empty.,"1- Leave the account number fileld empty. 
+2- Enter the From date. 
+3- Enter the To date. 
+4- Enter the amount lower limit.
+5- Enter the number of transactions.
+6- Click on ""Submit"" button.","
+12/5/2024
+30/6/2024
+500
+10","The system should display an error
+ ""account number is required""."

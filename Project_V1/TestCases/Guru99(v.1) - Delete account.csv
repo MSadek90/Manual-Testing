@@ -1,0 +1,15 @@
+Test Case ID,Test Scenarios,Test Case Title,Test Steps,Test Data,Expected Result
+TC-01,Verify account number.,The account number field can't be empty.,"1- Leave the account number field empty.
+2- Move to the next field.",,"The system should display An error message 
+""account number is required""."
+TC-02,Verify account number.,The account number field can't contain any characters.,"1- Enter the account number containing characters.
+2- Move to the next field.",12mahm,"The system should display An error message
+ ""Characters are not allowed""."
+TC-03,Verify account number.,The account number field can't contain any special character.,"1- Enter the account number containing special characters.
+2- Move to the next field.",12@@#3,"The system should display An error message 
+""Special characters are not allowed""."
+TC-04,Verify account number.,The account number field can't start with space.,"1- Enter the account number starting with a space.
+2- Move to the next field.",122,"The system should display An error message 
+""account number shouldn't start with empty space""."
+TC-05,Verify account number.,"""Submit"" button.","1- Enter a valid account number.
+2- Press submit.",175867,The system should display a message to confirm deleting the account.

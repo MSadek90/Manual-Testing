@@ -1,0 +1,109 @@
+Bug ID,Version,Test Case ID,Steps to reproduce,Expected Result,Actual Result
+B_1,V1,TC-05 \ New customer,Enter the name starting with a space.,"The system should display An error message
+ ""Characters are not allowed"".","The system should display An error message 
+""Numbers are not allowed""."
+B_2,V1,TC-06 \ New customer,Enter the address containing special characters ,"The system should display An error message
+ ""special Characters are not allowed"".",No errors appear
+B_3,V1,TC-07 \ New customer,Leave the address field empty,"The system should display An error message
+ ""address must not be blank"".",No errors appear
+B_4,V1,TC-08 \ New customer,Enter the address containing numbers only ,"The system should display An error message
+ ""numbers are not allowed"".",No errors appear
+B_5,V1,TC-09 \ New customer,Enter the address first character is a space.,"The system should display An error message
+ ""Characters are not allowed"".",No errors appear
+B_6,V1,TC-14/ New customer,Enter the city starting with a space.,"The system should display An error message
+ ""City cannot start with  a space"".","The system should display An error message
+ ""numbers are not allowed""."
+B_7,V1,TC-19/ New customer,Enter the state starting with a space.,"The system should display An error message
+ ""Characters are not allowed"".","The system should display An error message
+ ""numbers are not allowed""."
+B_8,V1,TC-32 / New customer,Enter the email have a space,"The system should display An error message
+""email is not valid""",No errors appear
+B_9,V1,TC-34 / New customer,Press submit,The data should submitted successfully,"""""""Connection Error is shown """""""" Warning: mysql_connect() [function.mysql-connect]: Access denied for user 'root'@'localhost' (using password: NO) in /home/demo/public_html/V1/html/editCustomerPage.php on line 3
+could not connect Access denied for user 'root'@'localhost' (using password: NO) """""""""""""""
+,,,,,
+B_10,V1,TC-04/ Edit customer,Enter the ID starting with a space,"The system should display An error message
+ ""Characters are not allowed"".",No errors appear
+B_11,V1,TC-05/ Edit customer,"Enter the ID containing numbers only.
+Press ""submit""",The system redirects the manager to edit customer details.,"""""""Connection Error is shown """""""" Warning: mysql_connect() [function.mysql-connect]: Access denied for user 'root'@'localhost' (using password: NO) in /home/demo/public_html/V1/html/editCustomerPage.php on line 3
+could not connect Access denied for user 'root'@'localhost' (using password: NO) """""""""""""""
+,,,,,
+B_12,V1,TC-02/ New account,Leave the customer ID field empty.,"The system should display An error message 
+""Customer ID must not be blank"".",No errors appear
+B_13,V1,TC-03/ New account,Enter the ID containing characters.,"The system should display An error message
+ ""Characters are not allowed"".",No errors appear
+B_14,V1,TC-04/ New account,Enter the ID containing special characters,"The system should display An error message 
+""Special characters are not allowed"".",No errors appear
+B_15,V1,TC-05/ New account,Enter the ID starting with empty character.,"The system should display An error message 
+""Customer ID shouldn't start with space"".",No errors appear
+B_16,V1,TC-11/ New account,Leave the initial deposit field empty.,"The system should display an error
+ ""Initial deposit shouldn't be empty"".",No errors appear
+B_17,V1,TC-12/ New account,"1- Enter a deposit of less than 500.
+2- Move to the next field.","The system should display an error
+ ""Initial deposit shouldn't be  less than 500"".",No errors appear
+B_18,V1,TC-16/ New account,"1- Enter a valid customer ID. 
+2-Choose an account from the account type field. 
+3- Enter a valid initial deposit. 
+4- Click on the ""Submit"" button.",The system should successfully create a new current account.,Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
+B_19,V1,TC-17/ New account,"""1- Leave the customer ID field empty. 
+2-Choose an account from the account type field. 
+3- Enter a valid initial deposit. 
+4- Click on the """"Submit"""" button.""","The system should display an error
+ ""Customer ID is required"".",No errors appear
+B_20,V1,TC-18/ New account,"1- Leave the customer ID field empty. 
+2- Leave the account type field empty. 
+3- Click on the ""Submit"" button.","The system should display an error
+ ""Customer ID is required"".",No errors appear
+,,,,, 
+B_21,V1,TC-06/ Mini Statment,"""1- Enter a valid account number.
+2- Press submit.""",The system should redirect the manager to mini statement page details,Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
+,,,,,
+B_22,V1,TC-05/Customized statement ,"""1- Enter the account number starting with a space.
+2- Move to the next field.""","The system should display An error message
+ ""Characters are not allowed"".",No errors appear.
+B_23,V1,TC-06/Customized statement ,"1- Leave the amount lower limit field empty.
+2- Move to the next field.","The system should display An error message 
+""amount lower limit is required"".",No errors appear.
+B_24,V1,TC-07/Customized statement,"1- Enter the amount lower limit containing characters.
+2- Move to the next field.","The system should display An error message
+ ""Characters are not allowed"".",No errors appear.
+B_25,V1,TC-08/Customized statement ,"1- Enter the amount lower limit containing special characters.
+2- Move to the next field.","The system should display An error message
+ ""Special characters are not allowed"".",No errors appear.
+B_26,V1,TC-10/Customized statement ,"1- Leave the number of transactions field empty.
+2- Move to the next field.","The system should display An error message 
+"" number of transactions is required"".",No errors appear.
+B_27,V1,TC-11/Customized statement ,"1- Enter the number of transactions containing characters.
+2- Move to the next field.","The system should display An error message
+ ""Characters are not allowed"".",No errors appear.
+B_28,V1,TC-12/Customized statement ,"1- Enter the number of transactions containing special characters.
+2- Move to the next field.","The system should display An error message
+ ""Special characters are not allowed"".",No errors appear.
+B_29,V1,TC-14/Customized statement ,"1- Enter The From date lager than the To date.
+2- Move to the next field.","The system should display An error message
+ ""To date must be larger than From date"".",No errors appear.
+B_30,V1,TC-16/Customized statement ,"""1- Enter a date in the future from today's date.
+2- Move to the next field.""","The system should display An error message
+ ""From date is invalid"".",No errors appear.
+B_31,V1,TC-21/Customized statement ,"""1- Enter a valid account number. 
+2- Enter the From date. 
+3- Enter the To date. 
+4- Enter the amount lower limit.
+5- Enter the number of transactions.
+6- Click on """"Submit"""" button.""",The system should successfully show the customized statment.,Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
+,,,,,
+B_32,V1,TC-04/Delete account,"1- Enter the account number starting with a space.
+2- Press TAB.","The system should display An error message 
+""account number shouldn't start with a space"".",No errors appear.
+B_33,V1,TC-05/Delete account,"1- Enter a valid account number.
+2- Press submit.",The system should display a message to confirm deleting the account.,Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
+,,,,,
+B_34,V1,TC-03/Edit customer,"""1- Enter the ID containing characters.
+2- Move to the next field.""","""The system should display An error message
+ """"Characters are not allowed"""".""",No errors appear.
+,,,,,
+B_35,V1,TC-02/Delete Customer,"1- Enter Customer ID containing characters.
+2- Move to the next field.","""The system should display An error message
+ """"Characters are not allowed"""".""",No errors appear.
+B_36,V1,TC-05/Delete Customer,"""1- Enter Customer ID have any spaces.
+2- Move to the next field.""","""The system should display An error message
+ """"Customer ID should not have any spaces"""".""",No errors appear.

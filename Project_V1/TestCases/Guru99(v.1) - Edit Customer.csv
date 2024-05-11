@@ -1,0 +1,15 @@
+Test Case ID,Test Scenarios,Test Case Title,Test Steps,Test Data,Expected Result
+TC-01,Verify customer ID.,Customer ID field cannot be left blank.,"1- Leave Customer ID field empty.
+2- Move to the next field.",,"The system should display An error message 
+""Customer ID is required""."
+TC-02,Verify customer ID.,Customer ID can't contain characters.,"1- Enter Customer ID containing characters.
+2- Move to the next field.",12mahm,"The system should display An error message
+ ""Characters are not allowed""."
+TC-03,Verify customer ID.,Customer ID can't contain any special characters.,"1- Enter Customer ID containing special characters.
+2- Move to the next field.",ah@@#3,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-04,Verify customer ID.,Customer ID cannot start with a space.,"1- Enter Customer ID start with a space.
+2- Move to the next field.",12399846,"The system should display An error message
+ ""Customer ID should not start with a space""."
+TC-05,Verify customer ID.,Customer ID should be numeric.,"1- Enter Customer ID containing numbers only.
+2- Press ""submit"".",12359,No errors appear

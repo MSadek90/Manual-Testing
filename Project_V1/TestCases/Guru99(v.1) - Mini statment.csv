@@ -1,0 +1,18 @@
+Test Case ID,Test Scenarios,Test Case Title,Test Steps,Test Data,Expected Result
+TC-01,Verify account number.,account number field cannot be left blank.,"1- Leave account number field empty.
+2- Move to the next field.",,"The system should display An error message 
+""account number is required""."
+TC-02,Verify account number.,account number can't contain any characters.,"1- Enter account number containing characters.
+2- Move to the next field.",12mahm,"The system should display An error message
+ ""account number must be numeric""."
+TC-03,Verify account number.,account number can't contain any special characters.,"1- Enter account number containing special characters.
+2- Move to the next field.",ah@@#3,"The system should display An error message
+ ""Special characters are not allowed""."
+TC-04,Verify account number.,account number cannot start with a space.,"1- Enter account number start with a space.
+2- Move to the next field.",12399846,"The system should display An error message
+ ""account number should not start with a space""."
+TC-05,Verify account number.,account number cannot have spaces.,"1- Enter account number have any spaces.
+2- Move to the next field.",123998 46,"The system should display An error message
+ ""account number should not have any spaces""."
+TC-06,Verify account number.,All fields valid.,"1- Enter a valid account number.
+2- Press submit.",12399846,The system should redirect the manager to mini statement page details
