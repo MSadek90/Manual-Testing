@@ -2,13 +2,18 @@ Guru99 Banking Project - GTPL Bank
 This is the readme.md file for the Guru99 Banking Project Software Requirements Specification.
 
 Introduction
-The Guru99 Bank project aims to provide a net banking facility to its customers. This release will have limited features, and new functionalities will be added over time.
+The Guru99 Bank project aims to provide a net banking facility to its customers. 
+This release will have limited features, and new functionalities will be added over time.
 
 Purpose
-The purpose of this document is to outline the requirements for the Guru99 Banking website to be developed for Guru99 Tech. Pvt. Ltd. This document will be used by all stakeholders, including developers and testers.
+The purpose of this document is to outline the requirements for the Guru99 Banking website to be developed for Guru99 Tech. Pvt. Ltd. 
+This document will be used by all stakeholders, including developers and testers.
 
 Scope
-The scope of this project is limited to the testing of the features described in the succeeding sections of this document. Non-functional testing like stress, performance is beyond the scope of this project. Automation testing is also beyond the scope. Functional testing and external interfaces are in scope and need to be tested. The banking site will be compatible only with Chrome version 27 and above.
+The scope of this project is limited to the testing of the features described in the succeeding sections of this document.
+Non-functional testing like stress, performance is beyond the scope of this project. 
+Automation testing is also beyond the scope. Functional testing and external interfaces are in scope and need to be tested. 
+The banking site will be compatible only with Chrome version 27 and above.
 
 Definitions, Acronyms, and Abbreviations
 Abbreviation	Word
