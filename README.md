@@ -18,40 +18,40 @@ C	Customer
 Specific Requirements
 The Guru99 Bank will have two roles: Manager and Customer. The following features/modules will be available to these two different roles:
 
-Manager
-New Customer
-Edit Customer
-Delete Customer
-New Account
-Edit Account
-Delete Account
-Mini Statement
-Customized Statement
-Customer
-Balance Enquiry
-Fund Transfer
-Mini Statement
-Customized Statement
-Deposit
-Withdrawal
-Change Password
-Login & Logout
-Project Version 1
+. Manager
+. New Customer
+. Edit Customer
+. Delete Customer
+. New Account
+. Edit Account
+. Delete Account
+. Mini Statement
+. Customized Statement
+. Customer
+. Balance Enquiry
+. Fund Transfer
+. Mini Statement
+. Customized Statement
+. Deposit
+. Withdrawal
+. Change Password
+. Login & Logout
+. Project Version 1
 Introduction
 This project is the first version of a banking site, which includes several modules that have been implemented for the Manager. The purpose of this version is to test the functionalities and identify any issues.
 
 Modules
 The following modules have been implemented for the Manager:
 
-New Customer
-Edit Customer
-New Account
-Edit Account
-Delete Account
-Delete Customer
-Mini Statement
-Customized Statement
-Accessing the site
+. New Customer
+. Edit Customer
+. New Account
+. Edit Account
+. Delete Account
+. Delete Customer
+. Mini Statement
+. Customized Statement
+. Accessing the site
 The first version of the Banking Site can be accessed via the following link:
 
 http://demo.guru99.com/V1/
