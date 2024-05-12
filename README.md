@@ -1,6 +1,5 @@
 # Guru99 Banking Project - GTPL Bank
 
-This is the `readme.md` file for the Guru99 Banking Project Software Requirements Specification.
 
 ## Introduction
 The Guru99 Bank project aims to provide a net banking facility to its customers. This release will have limited features, and new functionalities will be added over time.
